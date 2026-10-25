@@ -8,9 +8,13 @@ The robot navigates toward user-defined goals while using laser scan data, local
 
 Developed as part of the **Robotics Software Intern Assignment at Antropi Robotics**.
 
+<img width="1846" height="1167" alt="Screenshot from 2026-10-25 17-15-40" src="https://github.com/user-attachments/assets/30fdacb2-482c-4479-adea-db4db63f90b8" />
+
 ## Features
 
 - TurtleBot3 Burger simulation in Gazebo Classic.
+  <img width="1846" height="1167" alt="Screenshot from 2026-10-25 17-15-54" src="https://github.com/user-attachments/assets/ef39302b-5f3e-47f4-bdb5-2974a4bd8419" />
+
 - Custom world containing walls and obstacles.
 - Pre-generated occupancy-grid map created using SLAM.
 - AMCL-based robot localization.
@@ -143,6 +147,8 @@ export TURTLEBOT3_MODEL=burger
 
 ### 1. Launch Gazebo
 
+<img width="1846" height="1167" alt="Screenshot from 2026-10-25 17-15-06" src="https://github.com/user-attachments/assets/c65ae2c3-146c-4a50-89bd-bf842d7d71e6" />
+
 Open Terminal 1:
 
 ```bash
@@ -173,6 +179,8 @@ The navigation launch file loads the saved map, uses Gazebo simulation time, and
 
 ### 3. Open RViz
 
+<img width="1846" height="1167" alt="Screenshot from 2026-10-25 17-16-15" src="https://github.com/user-attachments/assets/eb721ec8-bada-478e-9d69-3d3eb4bc61ca" />
+
 If RViz does not open automatically, run this in another terminal:
 
 ```bash
@@ -194,6 +202,8 @@ Wait for AMCL to converge. Check that the laser scan aligns with walls and obsta
 
 ### 2. Send a navigation goal
 
+<img width="1846" height="1167" alt="Screenshot from 2026-10-25 17-17-01" src="https://github.com/user-attachments/assets/28d1b90b-7657-411b-af2a-c95a4b9380cd" />
+
 1. Select **2D Goal Pose** in RViz.
 2. Click a reachable, obstacle-free destination on the map.
 3. Drag to specify the desired final orientation.
@@ -201,6 +211,8 @@ Wait for AMCL to converge. Check that the laser scan aligns with walls and obsta
 5. Observe the planned path in RViz and the robot moving in Gazebo.
 
 Nav2 plans and executes a path toward the goal while accounting for obstacles detected by the robot's sensors and represented in its costmaps.
+
+<img width="1175" height="878" alt="Screenshot from 2026-10-25 17-17-27" src="https://github.com/user-attachments/assets/79f22d1e-aadd-4834-99db-1d145debc07b" />
 
 ## Map Information
 
