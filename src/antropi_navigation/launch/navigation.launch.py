@@ -6,6 +6,13 @@ from launch_ros.substitutions import FindPackageShare
 
 
 def generate_launch_description():
+    map_file = PathJoinSubstitution([
+        FindPackageShare('antropi_navigation'),
+        'maps',
+        'map1',
+        'map.yaml'
+    ])
+
     return LaunchDescription([
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
@@ -16,7 +23,7 @@ def generate_launch_description():
                 ])
             ),
             launch_arguments={
-                'map': '/home/smudhan/antropi_ws/src/antropi_navigation/maps/map1/map.yaml',
+                'map': map_file,
                 'use_sim_time': 'True',
                 'slam': 'False',
             }.items()
