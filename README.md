@@ -278,7 +278,7 @@ The assignment demo should show:
 - Autonomous movement and obstacle avoidance.
 - Successful arrival at the destination.
 
-**Demo video:** Add the recording link here once uploaded.
+**Demo video:** https://drive.google.com/file/d/17t2zkxPz6EJQ86vSr2eHhPzbkRNX07FF/view?usp=sharing
 
 ## Assignment
 
